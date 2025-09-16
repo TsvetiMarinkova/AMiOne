@@ -1,0 +1,167 @@
+/* ===========================
+   A Mi One Custom Styles
+   =========================== */
+
+/* 🎨 Brand Palette */
+:root {
+  --dark-gray: #252d34;
+  --primary-purple: #826cf8;
+  --lilac: #bc9bf3;
+  --accent-green: #b9d440;
+  --cream: #fdfae2;
+
+  /* Bootstrap overrides */
+  --bs-body-bg: var(--cream);
+  --bs-body-color: var(--dark-gray);
+  --bs-primary: var(--primary-purple);
+  --bs-secondary: var(--lilac);
+  --bs-success: var(--accent-green);
+}
+
+/* ===========================
+   Base Elements
+   =========================== */
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+/* Links */
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--primary-purple);
+}
+
+/* ===========================
+   Navbar
+   =========================== */
+
+.navbar {
+  background-color: var(--cream) !important;
+  border-bottom: 1px solid var(--lilac);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-purple) !important;
+  font-size: 1.3rem;
+}
+
+.navbar .nav-link {
+  color: var(--dark-gray) !important;
+  margin-left: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--primary-purple) !important;
+  font-weight: 600;
+}
+
+/* ===========================
+   Buttons
+   =========================== */
+
+.btn-primary {
+  background-color: var(--primary-purple);
+  border-color: var(--primary-purple);
+}
+.btn-primary:hover {
+  background-color: var(--lilac);
+  border-color: var(--lilac);
+}
+
+.btn-outline-primary {
+  color: var(--primary-purple);
+  border-color: var(--primary-purple);
+}
+.btn-outline-primary:hover {
+  background-color: var(--primary-purple);
+  color: #fff;
+}
+
+/* ===========================
+   Gallery
+   =========================== */
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 45, 52, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(37, 45, 52, 0.6);
+  color: #fff;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* ===========================
+   Product Cards
+   =========================== */
+
+.product-card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(37, 45, 52, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-card .card-title {
+  color: var(--primary-purple);
+  font-weight: 600;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+
+footer {
+  background-color: var(--dark-gray);
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-green);
+}
+footer a:hover {
+  color: var(--lilac);
+}
