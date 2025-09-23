@@ -4,39 +4,47 @@
 
 /* 🎨 Brand Palette */
 :root {
-  --dark-gray: #252d34;
-  --primary-purple: #826cf8;
-  --lilac: #bc9bf3;
-  --accent-green: #b9d440;
-  --cream: #fdfae2;
+  --dark-purple: #490055;
+  --aubergine: #661a46;
+  --pink: #d785a9;
+  --yellow: #dca75b;
+  --cream: #f5e9c1;
 
   /* Bootstrap overrides */
-  --bs-body-bg: var(--cream);
-  --bs-body-color: var(--dark-gray);
-  --bs-primary: var(--primary-purple);
-  --bs-secondary: var(--lilac);
-  --bs-success: var(--accent-green);
+  --bs-body-bg: var(--cream) !important;
+  --bs-body-color: var(--dark-purple) !important;
+  --bs-primary: var(--aubergine) !important;
+  --bs-secondary: var(--pink) !important;
+  --bs-success: var(--yellow) !important; /* NOT WORKING ON PRODUCT BUTTON */
 }
 
 /* ===========================
    Base Elements
    =========================== */
 
+@font-face {
+  font-family: "SchuboiseHandwrite";
+  src: url("../assets/fonts/SchuboiseHandwrite.ttf") format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "SchuboiseHandwrite", sans-serif;
   background-color: var(--cream);
-  color: var(--dark-gray);
+  color: var(--dark-purple);
   line-height: 1.6;
+  font-size: 1.3rem;
 }
 
 /* Links */
 a {
-  color: var(--accent-green);
+  color: var(--yellow);
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 a:hover {
-  color: var(--primary-purple);
+  color: var(--aubergine);
 }
 
 /* ===========================
@@ -44,25 +52,25 @@ a:hover {
    =========================== */
 
 .navbar {
-  background-color: var(--cream) !important;
-  border-bottom: 1px solid var(--lilac);
+  background-color: var(--aubergine) !important;
+  border-bottom: 2px solid var(--yellow);
 }
 
 .navbar-brand {
   font-weight: 700;
-  color: var(--primary-purple) !important;
+  color: var(--cream) !important;
   font-size: 1.3rem;
 }
 
 .navbar .nav-link {
-  color: var(--dark-gray) !important;
+  color: var(--cream) !important;
   margin-left: 1rem;
   transition: color 0.2s ease-in-out;
 }
 
 .navbar .nav-link.active,
 .navbar .nav-link:hover {
-  color: var(--primary-purple) !important;
+  color: var(--yellow) !important;
   font-weight: 600;
 }
 
@@ -71,21 +79,30 @@ a:hover {
    =========================== */
 
 .btn-primary {
-  background-color: var(--primary-purple);
-  border-color: var(--primary-purple);
+  background-color: var(--aubergine);
+  border-color: var(--aubergine);
 }
 .btn-primary:hover {
-  background-color: var(--lilac);
-  border-color: var(--lilac);
+  background-color: var(--pink);
+  border-color: var(--pink);
 }
 
 .btn-outline-primary {
-  color: var(--primary-purple);
-  border-color: var(--primary-purple);
+  color: var(--aubergine);
+  border-color: var(--aubergine);
 }
 .btn-outline-primary:hover {
-  background-color: var(--primary-purple);
+  background-color: var(--aubergine);
   color: #fff;
+}
+
+.btn-products-primary {
+  color: var(--yellow);
+  border-color: var(--yellow);
+}
+.btn-products-primary:hover {
+  background-color: var(--yellow);
+  color: var(--cream);
 }
 
 /* ===========================
@@ -134,9 +151,15 @@ a:hover {
 .product-card {
   border: none;
   border-radius: 12px;
+  background-color: var(--dark-purple);
+  color: var(--cream);
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(37, 45, 52, 0.1);
   transition: transform 0.2s ease;
+}
+
+.product-card .card-text {
+  color: var(--cream);
 }
 
 .product-card:hover {
@@ -144,7 +167,7 @@ a:hover {
 }
 
 .product-card .card-title {
-  color: var(--primary-purple);
+  color: var(--yellow);
   font-weight: 600;
 }
 
@@ -153,15 +176,15 @@ a:hover {
    =========================== */
 
 footer {
-  background-color: var(--dark-gray);
+  background-color: var(--dark-purple);
   color: #fff;
   padding: 2rem 0;
   text-align: center;
 }
 
 footer a {
-  color: var(--accent-green);
+  color: var(--yellow);
 }
 footer a:hover {
-  color: var(--lilac);
+  color: var(--pink);
 }

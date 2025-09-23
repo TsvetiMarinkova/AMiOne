@@ -11,16 +11,16 @@ export default function ProductCard({ product }) {
       />
       <div className="card-body d-flex flex-column">
         <h5 className="card-title">{product.title}</h5>
-        <p className="card-text text-muted">{product.short}</p>
+        <p className="card-text">{product.short}</p>
         <div className="mt-auto d-flex justify-content-between align-items-center">
           <div className="fw-semibold">
             {product.priceType === "fixed"
-              ? `$${product.price}`
+              ? `£${product.price}`
               : "Request a quote"}
           </div>
           <Link
             to={`/products/${product.slug}`}
-            className="btn btn-outline-primary btn-sm"
+            className="btn btn-products-primary btn-sm"
           >
             View
           </Link>

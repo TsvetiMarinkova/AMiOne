@@ -22,6 +22,7 @@ export default function ContactForm() {
         <label className="form-label">Your name</label>
         <input
           className="form-control"
+          style={{ borderColor: "var(--dark-purple)" }}
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -31,6 +32,7 @@ export default function ContactForm() {
         <label className="form-label">Email</label>
         <input
           className="form-control"
+          style={{ borderColor: "var(--dark-purple)" }}
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -41,6 +43,7 @@ export default function ContactForm() {
         <label className="form-label">Subject</label>
         <input
           className="form-control"
+          style={{ borderColor: "var(--dark-purple)" }}
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
         />
@@ -49,6 +52,7 @@ export default function ContactForm() {
         <label className="form-label">Message</label>
         <textarea
           className="form-control"
+          style={{ borderColor: "var(--dark-purple)" }}
           rows="6"
           value={message}
           onChange={(e) => setMessage(e.target.value)}

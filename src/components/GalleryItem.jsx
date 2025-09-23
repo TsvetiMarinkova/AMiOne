@@ -7,7 +7,11 @@ export default function GalleryItem({ item }) {
       <div className="gallery-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
         <div>
           <h6 className="mb-0">{item.title}</h6>
-          <small className="text-muted">{item.subtitle}</small>
+          <small style={{ color: "var(--success)" }}>
+            {item.subtitle}
+          </small>{" "}
+          {/*
+          colour not working again! */}
         </div>
       </div>
     </div>

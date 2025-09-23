@@ -12,15 +12,26 @@ export default function Contact() {
         </p>
         <ContactForm />
       </div>
-      <div className="col-md-5">
-        <div className="card p-3 shadow-sm">
+      <div className="col-md-5 mt-4">
+        <div
+          className="card p-3 shadow-sm"
+          style={{
+            borderColor: "var(--dark-purple)",
+          }}
+        >
           <h5>Other ways to reach Kaye</h5>
+          <p className="text-muted">
+            {" "}
+            (we dont need to have this here, just thought you might want to have
+            instagram and knitting group stuff displayed){" "}
+          </p>
           <p className="mb-0">
             <strong>Email:</strong>{" "}
             <a href="mailto:ami_one@hotmail.com">ami_one@hotmail.com</a>
           </p>
           <p className="mb-0">
-            <strong>Knitting group:</strong> Weekly meet-ups — add details here.
+            <strong>Knitting group:</strong> If you want it here we can add
+            details for the group
           </p>
         </div>
       </div>
