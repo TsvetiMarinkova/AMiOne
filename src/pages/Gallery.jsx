@@ -10,11 +10,9 @@ export default function Gallery() {
         A selection of pieces made by Kaye. Hover to see details.
       </p>
 
-      <div className="row g-3">
+      <div className="gallery-grid">
         {gallery.map((item) => (
-          <div key={item.id} className="col-12 col-sm-6 col-md-4">
-            <GalleryItem item={item} />
-          </div>
+          <GalleryItem key={item.id} item={item} />
         ))}
       </div>
     </div>

@@ -75,6 +75,42 @@ a:hover {
 }
 
 /* ===========================
+   About
+   =========================== */
+
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.about-container h2 {
+  font-weight: 600;
+}
+
+.about-text h4 {
+  margin-top: 2rem;
+  color: #252d34;
+  font-weight: 500;
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .about-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .about-header {
+    text-align: center;
+  }
+}
+
+/* ===========================
    Buttons
    =========================== */
 
@@ -109,17 +145,23 @@ a:hover {
    Gallery
    =========================== */
 
+.gallery-grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(37, 45, 52, 0.15);
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .gallery-item img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(37, 45, 52, 0.15);
   transition: transform 0.4s ease;
 }
 
