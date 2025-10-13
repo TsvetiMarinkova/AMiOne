@@ -20,18 +20,16 @@ export default function Contact() {
           }}
         >
           <h5>Other ways to reach Kaye</h5>
-          <p className="text-muted">
-            {" "}
-            (we dont need to have this here, just thought you might want to have
-            instagram and knitting group stuff displayed){" "}
-          </p>
           <p className="mb-0">
-            <strong>Email:</strong>{" "}
+            <strong>Email:</strong>
             <a href="mailto:ami_one@hotmail.com">ami_one@hotmail.com</a>
           </p>
           <p className="mb-0">
-            <strong>Knitting group:</strong> If you want it here we can add
-            details for the group
+            <strong>Instagram:</strong>
+            <a href="https://www.instagram.com/NW10Knitters/">@NW10Knitters</a>
+          </p>
+          <p className="mb-0">
+            <strong>Knitting group:</strong> Saturdays 10am-12pm
           </p>
         </div>
       </div>

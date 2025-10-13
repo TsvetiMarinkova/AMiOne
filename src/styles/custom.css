@@ -23,14 +23,14 @@
    =========================== */
 
 @font-face {
-  font-family: "SchuboiseHandwrite";
-  src: url("../assets/fonts/SchuboiseHandwrite.ttf") format("truetype");
+  font-family: "ComicSans";
+  src: url("../assets/fonts/ComicSansMS3.ttf") format("truetype");
   font-weight: lighter;
   font-style: normal;
 }
 
 body {
-  font-family: "SchuboiseHandwrite", sans-serif;
+  font-family: "ComicSans", sans-serif;
   background-color: var(--cream);
   color: var(--dark-purple);
   line-height: 1.6;

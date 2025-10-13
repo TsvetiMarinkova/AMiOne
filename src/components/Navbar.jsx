@@ -6,8 +6,12 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <div className="brand-mark" aria-hidden></div>
-          <span className="ms-2 brand-text">A Mi One</span>
+          <img
+            src="src/assets/logo/amionelogo.png"
+            alt="A Mi One Logo"
+            className="brand-logo"
+            style={{ height: "60px" }}
+          />
         </Link>
 
         <button

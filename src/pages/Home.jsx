@@ -30,7 +30,7 @@ export default function Home() {
           <div className="col-md-5 d-none d-md-block">
             <div className="card shadow-lg">
               <img
-                src="src\assets\products\custom.jpg"
+                src="src\assets\logo\amionelogo.png"
                 alt="Handmade by Kaye"
                 className="card-img-top"
               />
