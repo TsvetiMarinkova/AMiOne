@@ -1,6 +1,3 @@
-import custom from '../assets/products/custom.jpg';
-import stitchmarker from '../assets/products/stitch-markers.jpg';
-
 const products = [
     {
         id: 'custom-order',
@@ -10,7 +7,7 @@ const products = [
         price: null,
         short: 'Custom orders — contact for a quote.',
         description: 'Have a special idea? Kaye takes commissions for bespoke pieces...',
-        images: [custom],
+        images: ['/assets/products/custom.jpg'], // Updated path
     },
     {
         id: 'stitch-marker',
@@ -20,7 +17,7 @@ const products = [
         price: null,
         short: 'Handmade stitch markers — contact for a quote.',
         description: 'Beautiful handmade stitch markers.',
-        images: [stitchmarker],
+        images: ['/assets/products/stitch-markers.jpg'], // Updated path
     },
 ];
 

@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container">
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src="src/assets/logo/amionelogo.png"
+            src="/assets/logo/amionelogo.png" // Updated path
             alt="A Mi One Logo"
             className="brand-logo"
             style={{ height: "60px" }}

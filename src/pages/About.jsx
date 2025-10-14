@@ -13,7 +13,7 @@ export default function About() {
       <div className="position-relative mx-auto" style={{ maxWidth: "750px" }}>
         {/* Image floated top-right */}
         <img
-          src="/src/assets/kaye/portrait.jpg"
+          src="/assets/kaye/portrait.jpg" // Updated path
           alt="Kaye Powell portrait"
           className="about-photo float-end ms-2 mb-3 shadow-sm"
         />
