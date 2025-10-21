@@ -12,12 +12,12 @@ export default function About() {
         </div>
 
       {/* ===== Content Wrapper ===== */}
-      <div className="position-relative mx-auto" style={{ maxWidth: "750px" }}>
+      <div className="about-flex d-flex flex-column flex-md-row align-items-start mb-4">
         {/* Image floated top-right */}
         <img
           src="/assets/kaye/portrait.jpg" // Updated path
           alt="Kaye Powell portrait"
-          className="about-photo float-end ms-2 mb-3 shadow-sm"
+          className="about-photo me-md-4 mb-3 mb-md-0"
         />
 
         {/* ===== Body Text ===== */}
