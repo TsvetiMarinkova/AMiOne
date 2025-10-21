@@ -108,6 +108,10 @@ a:hover {
   .about-header {
     text-align: center;
   }
+
+   .about-hero {
+  background: var(--yellow);
+}
 }
 
 /* ===========================
