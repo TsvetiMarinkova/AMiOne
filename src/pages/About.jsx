@@ -4,10 +4,12 @@ export default function About() {
   return (
     <div className="about-container container py-5">
       {/* ===== Title ===== */}
-      <h2 className="text-center mb-4">A Mi One: A Knitter’s Story</h2>
-      <h4 className="text-muted text-center mb-5">
+      <div className="about-hero py-5 text-center">
+      <h2 className="mb-4">A Mi One: A Knitter’s Story</h2>
+      <h4 className="text-muted mb-5">
         The Journey of Kaye Powell
       </h4>
+        </div>
 
       {/* ===== Content Wrapper ===== */}
       <div className="position-relative mx-auto" style={{ maxWidth: "750px" }}>
